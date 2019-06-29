@@ -22,8 +22,9 @@ class Transfer
     end
     if !@sender.valid?
       "Transaction rejected. Please check your account balance."
+      sender.status = "rejected"
     end
-    sender.status = "rejected"   if !@sender.valid?
+
     # binding.pry
   end
 
