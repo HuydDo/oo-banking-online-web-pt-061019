@@ -23,7 +23,6 @@ class Transfer
     if !@sender.valid?
       @status = "rejected"
       "Transaction rejected. Please check your account balance."
-
     end
 
     # binding.pry
